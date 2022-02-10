@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <title>Ultimate Recipes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <h1 class="card-header">Jose's UltimateRecipes</h1>
+          <div class="card-body">
+            <form id="add_recipes" name="add_recipes" class="col-12">
+                <div class="row">
+                  <label for="recipe_title" class="col-2">Recipe Title</label>
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="recipe_title"
+                      placeholder="Enter title">
+                  </div>
+                </div>
+        
+                <div class="row">
+                    <label for="ingredient_one" class="col-2">Ingredient 1</label>
+                    <div class="col-4">
+                      <input type="text" class="form-control" id="ingredient_one"
+                        placeholder="Enter ingredient">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="ingredient_two" class="col-2">Ingredient 2</label>
+                    <div class="col-4">
+                      <input type="text" class="form-control" id="ingredient_two"
+                        placeholder="Enter ingredient">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <label for="ingredient_three" class="col-2">Ingredient 3</label>
+                    <div class="col-4">
+                      <input type="text" class="form-control" id="ingredient_three"
+                        placeholder="Enter ingredient">
+                    </div>
+                </div>
+                <div class="row">
+                  <label for="ingredient_four" class="col-2">Ingredient 4</label>
+                  <div class="col-4">
+                    <input type="text" class="form-control" id="ingredient_four"
+                      placeholder="Enter ingredient">
+                  </div>
+                </div>
+        
+                <div class="row">
+                    <label for="add_button" class="col-2"></label>
+                    <div class="col-4">
+                      <button type="button" class="btn btn-primary" id="add_button">
+                      Add Recipe</button>
+                    </div>
+                  </div>
+          
+            </form>
+        
+          </div>
+          <div class=card-body>
+            <div class="row">
+                <label for="show_button" class="col-2"></label>
+                <div class="col-4">
+                  <button type="button" class="btn btn-primary" id="show_button">
+                  Show Recipes</button>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-12" id="recipe_data">
+                </div>
+              </div>
+      
+
+          </div>
+        </div>
+      </div>
+      
+
+
+
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+
+    <script type ="module" src="app-index.js"></script>
+</body>
+</html>
